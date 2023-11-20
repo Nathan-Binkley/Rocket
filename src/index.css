@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Joan:regular,bold,italic&subset=latin,latin-ext&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Joan';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: "#25274d";
+}
+
+nav {
+  font-family: 'Joan';
+  border-radius: 5px;
+  padding: .5rem;
+  
+}
+
+.navbar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+p {
+  color: #464866;
+  font-family: 'Joan';
+  font-size: 1rem;
+  text-align: center;
+  
+  background-color: #f4f4f4;
+}
+
+.background-general {
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  padding: .5rem;
+}
+
+code {
+  font-family: 'Joan', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
