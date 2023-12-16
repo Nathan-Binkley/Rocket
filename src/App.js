@@ -28,7 +28,7 @@ function App() {
           backgroundRepeat: `no-repeat`,
           width: `2440px`,
           height: `1980px`,
-          
+          backgroundAttachment: 'fixed'
         }}
         className='img-fluid'>
         <Router>
