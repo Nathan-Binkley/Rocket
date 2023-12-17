@@ -1,14 +1,14 @@
 import './index.css';
-import FunNavigatorSuggestion from './FunNavigatorSuggestion';
+import Suggestion from './Suggestion';
 import React, { useState } from 'react';
 
-function FunNavigator(props){
+function SuggestionsGrid(props){
     const [error] = useState(null);
     const [isLoaded] = useState(false);
     var suggestions = [];
     
     for (var i = 0; i < props.images.length; i++) {
-        suggestions.push(<FunNavigatorSuggestion img={props.images[i]} txt={props.text[i]}></FunNavigatorSuggestion>);
+        suggestions.push(<Suggestion img={props.images[i]} txt={props.text[i]}></Suggestion>);
     }
     
     return (
@@ -23,5 +23,5 @@ function FunNavigator(props){
     );
 }
   
-  export default FunNavigator;
+  export default SuggestionsGrid;
   

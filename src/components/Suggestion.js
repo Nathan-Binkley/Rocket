@@ -1,6 +1,6 @@
 import './index.css';
 
-function FunNavigatorSuggestion(props) {
+function Suggestion(props) {
     return (
     <>
         <div className='col-lg-4 col-md-4 col-sm-12 text-center pb-3'>
@@ -12,4 +12,4 @@ function FunNavigatorSuggestion(props) {
     );
   }
   
-  export default FunNavigatorSuggestion;
+  export default Suggestion;

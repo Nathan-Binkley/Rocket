@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
-import FunNavigator from './FunNavigator';
-import Nearby from "./Nearby";
+import  from './SuggestionsPage';
+import Nearby from "./components/Nearby";
 import Plan from "./Plan";
-import About from "./About";
+import About from "./components/About";
 import './index.css';
 import {
   BrowserRouter as Router,
@@ -13,6 +13,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Navbar, Nav } from 'react-bootstrap';
+import SuggestionsGrid from "./SuggestionsPage";
 function App() {
 
   document.body.style = 'background-color: #25274d;';
@@ -49,7 +50,7 @@ function App() {
           </div>
           <div className="container background-general" >
             <Routes>
-              <Route path="/" element={<FunNavigator images={landingPageImages} text={landingPageDesc}></FunNavigator>}>
+              <Route path="/" element={<SuggestionsGrid images={landingPageImages} text={landingPageDesc}></SuggestionsGrid>}>
 
               </Route>
               <Route path="/nearby" element={<Nearby />}>
