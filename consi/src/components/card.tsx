@@ -1,19 +1,17 @@
-
-
 export default function Card(props) {
     return (
-        <div className="max-w-sm rounded overflow-hidden shadow-lg gap-16">
-            <img className="w-full" src={props.image} alt={props.alt}/>
+        <div className="bg-blue-300 max-w-sm  overflow-hidden shadow-lg px-3 py-3 rounded-s">
+            <img className="w-full" src={props.image} alt={props.alt} />
             <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <div className="font-bold text-xl mb-2">{props.title}</div>
                 <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    {props.description}
                 </p>
             </div>
             <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                <button className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.categories[0]}</button>
+                <button className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.categories[1]}</button>
+                <button className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.categories[2]}</button>
             </div>
         </div>
     )
