@@ -74,10 +74,9 @@ export default function Page() {
                     </ul>
                 </nav>
             </div>
-            <div className="bg-gray-200 flex flex-wrap content-center justify-center gap-8">
+            <div className="bg-gray-200 flex flex-wrap content-center justify-center gap-8 py-8">
                 {content}
             </div>
         </main>
     );
-
 }

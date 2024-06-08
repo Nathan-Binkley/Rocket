@@ -18,7 +18,7 @@ export default function Home() {
           </ul>
         </nav>
       </div>
-      Home
+
     </main >
   );
 }
